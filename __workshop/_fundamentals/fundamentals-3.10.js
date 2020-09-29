@@ -8,7 +8,11 @@
 // e.g. f("BACON BROCOLI"); // Bacon Brocoli
 
 function makeIntoTitle(sentence) {
-  // Your code here
+  strSplit = sentence.split(" ");
+  let upArr = strSplit.map((word) => {
+    return word.charAt(0).toUpperCase() + word.substring(1);
+  });
+  return upArr.join(" ");
 }
 
 // Part 2 - Test

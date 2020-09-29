@@ -5,6 +5,9 @@ const firstLetter = require("../fundamentals-3.1");
 test("Exercise 1", function () {
   expect(firstLetter("max")).toBe("m");
   expect(firstLetter("")).toBe(undefined);
+  expect(firstLetter(25)).toBe(undefined);
+  expect(firstLetter(" pump")).toBe(" ");
+  expect(firstLetter("JavaScript")).toBe("J");
   // add more tests here...
 });
 

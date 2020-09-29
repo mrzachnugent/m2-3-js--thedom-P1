@@ -11,7 +11,15 @@
 // `typeof 3` returns 'number'
 
 function sum(arr) {
-  // Your code here
+  if (
+    typeof arr.isArray === false ||
+    typeof arr[0] !== "number" ||
+    typeof arr[1] !== "number" ||
+    arr.length !== 2
+  ) {
+    return undefined;
+  }
+  return arr[0] + arr[1];
 }
 
 // Part 2 - Test

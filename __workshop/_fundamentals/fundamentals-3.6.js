@@ -18,7 +18,27 @@
 // calculator(["add", 10, 20]); // 30
 
 function calculator(arr) {
-  // Your code here
+  if (
+    arr.length === 3 &&
+    typeof arr[1] === "number" &&
+    typeof arr[2] === "number"
+  ) {
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[0] === "add") {
+        return arr[1] + arr[2];
+      } else if (arr[0] === "sub") {
+        return arr[1] - arr[2];
+      } else if (arr[0] === "mul") {
+        return arr[1] * arr[2];
+      } else if (arr[0] === "div") {
+        return arr[1] / arr[2];
+      } else {
+        return undefined;
+      }
+    }
+  } else {
+    return undefined;
+  }
 }
 
 // Part 2 - Test

@@ -11,8 +11,9 @@ function strLength(str) {
   // Your code here
   if (typeof str !== "string" || str.length === 0) {
     return undefined;
+  } else {
+    return str.length;
   }
-  return str.length;
 }
 
 // Part 2 - Test

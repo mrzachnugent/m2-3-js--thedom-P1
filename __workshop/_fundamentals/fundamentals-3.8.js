@@ -6,7 +6,13 @@
 // For example "hello" would return "olleh" and "how are you" would return "uoy era woh".
 
 function reverseIt(str) {
-  // Your code here
+  if (typeof str === "string") {
+    let splitStr = str.split("");
+    let reverseArr = splitStr.reverse();
+    let joinArr = reverseArr.join("");
+    return joinArr;
+  }
+  return undefined;
 }
 
 // Part 2 - Test

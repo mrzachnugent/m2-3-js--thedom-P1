@@ -6,6 +6,9 @@ test("Exercise 10", () => {
   expect(makeIntoTitle("a bb ccc dddd e ff ggg")).toBe(
     "A Bb Ccc Dddd E Ff Ggg"
   );
+  expect(makeIntoTitle("MEET THE WOO")).toBe("Meet The Woo");
+  expect(makeIntoTitle("wElCome")).toBe("Welcome");
+  expect(makeIntoTitle("Google Here I Come")).toBe("Google Here I Come"); //💩
   // add more tests here...
 });
 
